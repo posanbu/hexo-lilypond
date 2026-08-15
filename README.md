@@ -1,23 +1,24 @@
 # hexo-lilypond
 
+[![npm version](https://img.shields.io/npm/v/hexo-lilypond.svg)](https://www.npmjs.com/package/hexo-lilypond)
+[![license](https://img.shields.io/npm/l/hexo-lilypond.svg)](https://github.com/NashChennc/hexo-lilypond/blob/main/LICENSE)
+[![node](https://img.shields.io/node/v/hexo-lilypond.svg)](https://nodejs.org/)
+
 在 Markdown 里直接写 LilyPond 乐谱，`hexo generate` 时调用本机 LilyPond CLI 编译成 SVG 嵌入页面。零 npm 运行依赖。
 
 第一版只做 7 件事：` ```lilypond ` / ` ```lily ` 围栏、`{% lilypond %}` 标签、本机 CLI、SVG 输出、SHA256 缓存、版本检查、清晰报错。
 
 ## 安装
 
-> 当前尚未发布到 npm registry。本地使用走 `file:` 依赖：
-
-```bash
-# 站点 package.json 里加依赖后 npm install（会建符号链接）
-"dependencies": { "hexo-lilypond": "file:../hexo-lilypond" }
-```
-
-将来发布后改为：
-
 ```bash
 npm install hexo-lilypond
 ```
+
+> 本地开发时想改包代码即时生效，可在站点改用 `file:` 依赖（npm 会建符号链接）：
+>
+> ```json
+> "dependencies": { "hexo-lilypond": "file:../hexo-lilypond" }
+> ```
 
 ## 环境准备
 
