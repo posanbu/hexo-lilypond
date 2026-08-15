@@ -1,0 +1,29 @@
+{
+  "name": "hexo-lilypond",
+  "version": "1.0.0",
+  "description": "Hexo plugin: render LilyPond sheet music in Markdown fences/tags as inline SVG",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "lib/"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "hexo",
+    "lilypond",
+    "music",
+    "sheet-music",
+    "svg",
+    "hexo-plugin"
+  ],
+  "license": "MIT",
+  "author": "nashchennc",
+  "peerDependencies": {
+    "hexo": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
