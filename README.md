@@ -1,7 +1,7 @@
 # hexo-lilypond
 
 [![npm version](https://img.shields.io/npm/v/hexo-lilypond.svg)](https://www.npmjs.com/package/hexo-lilypond)
-[![license](https://img.shields.io/npm/l/hexo-lilypond.svg)](https://github.com/NashChennc/hexo-lilypond/blob/main/LICENSE)
+[![license](https://img.shields.io/npm/l/hexo-lilypond.svg)](https://github.com/posanbu/hexo-lilypond/blob/main/LICENSE)
 [![node](https://img.shields.io/node/v/hexo-lilypond.svg)](https://nodejs.org/)
 
 在 Markdown 里直接写 LilyPond 乐谱，`hexo generate` 时调用本机 LilyPond CLI 编译成 SVG 嵌入页面。零 npm 运行依赖。

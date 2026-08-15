@@ -8,7 +8,8 @@
     "lib/"
   ],
   "scripts": {
-    "test": "node --test"
+    "test": "node --test",
+    "prepublishOnly": "npm test"
   },
   "keywords": [
     "hexo",
@@ -18,6 +19,14 @@
     "svg",
     "hexo-plugin"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/posanbu/hexo-lilypond.git"
+  },
+  "bugs": {
+    "url": "https://github.com/posanbu/hexo-lilypond/issues"
+  },
+  "homepage": "https://github.com/posanbu/hexo-lilypond#readme",
   "license": "MIT",
   "author": "nashchennc",
   "peerDependencies": {
