@@ -6,6 +6,18 @@
 
 在 Markdown 里直接写 LilyPond 乐谱，`hexo generate` 时调用本机 LilyPond CLI 编译成 SVG 嵌入页面。零 npm 运行依赖。
 
+## 效果预览
+
+**单声部谱例**（浅色主题）：
+
+![单声部谱例（浅色）](docs/demo-single.png)
+
+**多声部谱例** —— 左为浅色 + 背景染色，右为深色主题：
+
+| 浅色 · 背景染色 | 深色 |
+|:---:|:---:|
+| ![多声部谱例（浅色 + 染色）](docs/demo-polyphonic.png) | ![多声部谱例（深色）](docs/demo-polyphonic-dark.png) |
+
 ## 安装
 
 ```bash
