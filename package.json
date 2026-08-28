@@ -1,6 +1,6 @@
 {
   "name": "hexo-lilypond",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Hexo plugin: render LilyPond sheet music in Markdown fences/tags as inline SVG",
   "main": "index.js",
   "files": [

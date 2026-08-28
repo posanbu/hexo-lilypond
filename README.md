@@ -39,11 +39,18 @@ lilypond:
   version: "2.26.0"           # 与 `lilypond --version` 实际版本一致
   output:
     format: svg
+    padding:                  # 单位 mm；给 -dcrop 的紧边界增加安全留白
+      top: 1
+      right: 1
+      bottom: 2
+      left: 1
   cache:
     enable: true
     dir: .cache/lilypond      # 编译临时目录（.ps/.midi/日志隔离在此）
   onError: auto               # auto | embed | fail
 ```
+
+`output.padding` 可写成单个数字（四边相同），也可按上例分别设置；写成 `0` 或 `false` 可关闭。插件会同时扩展 SVG 的物理尺寸和 `viewBox`，因此谱面字号、比例及字体不变，只增加透明安全边距。
 
 **重要**：另在 `_config.yml` 的 `exclude` 里加 `scores/**`，防止 `.ly` 源文件被复制到 `public/`：
 
@@ -111,6 +118,7 @@ lib/
   ├── parser.js           # 标签参数解析（caption/width 接口已留，未接入输出）
   ├── wrapper.js          # 包装源码（去 \version、注入 \pointAndClickOff、行偏移）
   ├── compiler.js         # spawn lilypond → SVG；错误行解析
+  ├── svg.js              # 扩展 -dcrop SVG 的物理尺寸与 viewBox
   ├── cache.js            # SHA256 键 + public 缓存
   └── renderer.js         # 编排，输出 <figure>
 test/                     # node:test 单测（零依赖）
